@@ -1,0 +1,50 @@
+#client-info {
+  padding-top: 80px;
+  min-width: 960px;
+  overflow: hidden;
+  .client-info__car {
+
+    max-width: 1000px;
+    margin: 0 auto;
+    &:hover {
+      img {
+        left: 0;
+      }
+    }
+    img {
+      position: relative;
+      left: 1960px;
+      width: 100%;
+      transition: all .7s ease-in-out;
+    }
+  }
+  .client-info__bg {
+    background: $clientGrey;
+    height: 150px;
+    padding-top: 100px;
+    margin-top: -110px;
+    .container {
+      .client-info__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        .client-info__item {
+          a {
+            color: #fff;
+            .client-info__item-img {
+
+            }
+            .client-info__item-text {
+              display: block;
+              text-align: center;
+              font-size: 12px;
+              text-transform: uppercase;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

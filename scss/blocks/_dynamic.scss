@@ -1,0 +1,69 @@
+#dynamic {
+  .dynamic-banner {
+    background: url("../images/dynamic_bg.jpg") no-repeat center;
+    min-width: 960px;
+    height: 100vh;
+    color: #fff;
+    text-shadow: #000 0 0 5px;
+    .container {
+      padding-top: 40px;
+      font-weight: bold;
+      .dynamic-title {
+        display: block;
+        font-size: 22px;
+        line-height: 40px;
+        padding-left: 5px;
+        text-transform: uppercase;
+        background: url("../images/top_stick.gif") no-repeat 7px 0;
+      }
+      .dynamic-slogan {
+        font-size: 50px;
+        line-height: 53px;
+        padding-top: 15px;
+      }
+      .dynamic-text {
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 15px;
+        padding-left: 5px;
+      }
+    }
+  }
+
+  .dynamic-info {
+    .container {
+      .dynamic-info__article {
+        display: block;
+        color: $blackColor;
+        width: 450px;
+        overflow: hidden;
+        margin-top: 50px;
+        &:hover {
+          .dynamic-info__img img { transform: scale(1.1); }
+          text-decoration: underline;
+          cursor: pointer;
+        }
+        .dynamic-info__img {
+          img {
+            display: block;
+            transition: all .5s ease-in-out;
+            width: 100%;
+          }
+          overflow: hidden;
+        }
+        .dynamic-info__title {
+          font-size: 17px;
+          margin-top: 15px;
+        }
+        .dynamic-info__text {
+          font-size: 13px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+  }
+
+
+}

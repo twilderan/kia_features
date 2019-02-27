@@ -1,0 +1,95 @@
+#main-content {
+  .main-content__car_info {
+    /* CAR MENU */
+    .car-menu {
+      background: $redColor;
+      .container {
+        display: flex;
+        justify-content: space-between;
+        .car-menu__info {
+          display: flex;
+
+          .car-menu__logo {
+            height: 50px;
+            img {
+              width: 188px;
+            }
+          }
+          .car-menu__menu {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin-left: 20px;
+            height: 100%;
+            li {
+              vertical-align: middle;
+              text-transform: uppercase;
+              margin-right: 25px;
+              height: 100%;
+              a {
+                display: block;
+                font-size: 14px;
+                line-height: 50px;
+                text-decoration: none;
+                color: #dd8b95;
+                height: 100%;
+                &:hover { text-decoration: underline; }
+              }
+            }
+          }
+        }
+        .car-menu__more {
+          width: 93px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-left: 1px solid #920510;
+          border-right: 1px solid #920510;
+          .more-dwn {
+            width: 47px;
+            height: 12px;
+            background: url("../images/car_spr.png") 0 -34px;
+
+          }
+        }
+      }
+    }
+
+    /* CAR INFO */
+    .car-info {
+      .container {
+        .car-info__list {
+          display: flex;
+          justify-content: center;
+          list-style: none;
+          .car-info__list-item {
+            width: 320px;
+            height: 140px;
+            background-color: #F7F7F7;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-left: 0.5px solid #d1d1d1;
+            border-right: 0.5px solid #d1d1d1;
+            box-sizing: border-box;
+            .list-item__details {
+              margin-top: 10px;
+              font-size: 14px;
+              color: $lightGreyColor;
+              span {
+                font-size: 20px;
+                line-height: 26px;
+                display: block;
+                font-weight: bold;
+                color: $blackColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
