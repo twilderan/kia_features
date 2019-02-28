@@ -98,8 +98,20 @@
       display: flex;
       justify-content: left;
       .footer-map__item {
-        width: 19%;
-        margin-right: 40px;
+        margin-left: 2.5%;
+        &:first-child {
+          width: 18%;
+          margin: 0;
+        }
+        &:nth-child(2) {
+          width: 18%;
+        }
+        &:nth-child(3) {
+          width: 13%;
+        }
+        &:nth-child(4) {
+          width: 23%;
+        }
         &-title {
           font-size: 14px;
           margin-bottom: 18px;
@@ -108,9 +120,9 @@
         }
         &-list {
           list-style: none;
-          &:nth-child(3) { white-space: nowrap }
           .item-list__item {
             line-height: 1em;
+
             a {
               text-decoration: none;
               text-transform: uppercase;

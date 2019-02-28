@@ -7,16 +7,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <script src="js/jquery-3.3.1.min.js"></script>
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
   <title>Kia Stonic Features | Кіа Stonic Особливості | Kia Motors Україна</title>
 </head>
 <body>
-
 <!-- WRAPPER -->
 <div class="wrapper">
   <!-- HEADER -->
-  <header class="header">
+  <header class="header" id="header">
     <!-- HEADER TOP -->
     <div class="header-top">
       <div class="container">
@@ -78,14 +79,46 @@
             </nav>
           </div>
           <div class="car-menu__more">
-            <div class="more-dwn">
+            <div class="more-btn"></div>
+            <ul class="more-list">
+              <li class="more-list__item">
 
-            </div>
+                <a href="#">
+                  <em class="item-spt"></em>
+                  Записатися на тест-драйв
+                </a>
+              </li>
+              <li class="more-list__item">
+                <a href="#">
+                  <em class="item-spt"></em>
+                  Завантажити брошуру
+                </a>
+              </li>
+              <li class="more-list__item">
+                <a href="#">
+                  <em class="item-spt"></em>
+                  ШУКАТИ ДИЛЕРА
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
       <div class="car-slider">
-
+        <div class="car-slider__item">
+          <div class="container">
+            <h2 class="slider__item-slogan">Відчуй кожну мить життя разом з
+              абсолютно новим Kia Stonic!
+            </h2>
+            <p class="slider__item-text">Яскравий, молодіжний та надзвичайно
+              спритний Stonic відкриває для бренду Kia сегмент суб-компактних
+              міських кросоверів. Завдяки чудовим ходовим якостям задоволення
+              за кермом стає реальним навіть на далеких від ідеалу українських
+              дорогах. Просторий салон та багате опційне наповнення роблять його
+              одним з найвигідніших придбань у сегменті.
+            </p>
+          </div>
+        </div>
       </div>
       <div class="car-info">
         <div class="container">
@@ -127,8 +160,39 @@
     </div>
     <!-- EXTERIOR -->
     <div id="exterior">
-      <div class="exterior__car-slider">
-
+      <div class="exterior__car-slider owl-carousel">
+        <div class="car-slider__item item bg-1">
+          <div class="container">
+            <span class="slider__item-title">ЕКСТЕР'ЄР</span>
+            <h2 class="slider__item-slogan"> Яскравий молодіжний дизайн,
+              розроблений у франкфуртській студії дизайну Kia</h2>
+            <p class="slider__item-text">Яскравий молодіжний дизайн, розроблений
+              у франкфуртській студії дизайну Kia, не залишить байдужими ані
+              власника авто, ані оточуючих.
+            </p>
+          </div>
+        </div>
+        <div class="car-slider__item item bg-2">
+          <div class="container">
+            <span class="slider__item-title">ЕКСТЕР'ЄР</span>
+            <h2 class="slider__item-slogan">Стиль та функціональність, що вражають</h2>
+            <p class="slider__item-text">Задня частина Stonic, утворена чіткими
+              прямим лініями та підкреслена тривимірними світлодіодними задніми
+              ліхтарями, говорить про рішучий характер кросовера
+            </p>
+          </div>
+        </div>
+        <div class="car-slider__item item bg-3">
+          <div class="container">
+            <span class="slider__item-title">ЕКСТЕР'ЄР</span>
+            <h2 class="slider__item-slogan">Stonic: чудовий засіб для подорожей,
+              незважаючи на обраний вами напрям</h2>
+            <p class="slider__item-text">Відкривайте нові місця, отримуйте новий
+              досвід та безліч вражень! Kia Stonic - ваш надійний супутник у
+              подорожах міськими джунглями.
+            </p>
+          </div>
+        </div>
       </div>
       <div class="exterior__car-parts">
         <ul class="exterior__car-parts__items">
@@ -161,8 +225,28 @@
     </div>
     <!-- INTERIOR -->
     <div id="interior">
-      <div class="exterior__car-slider">
-
+      <div class="interior__car-slider owl-carousel">
+        <div class="car-slider__item item bg-1">
+          <div class="container">
+            <span class="slider__item-title">ІНТЕР'ЄР</span>
+            <h2 class="slider__item-slogan">Забезпечуючи максимум комфорту та
+              контролю над автомобілем</h2>
+            <p class="slider__item-text">Ретельно прдуманий та яскраво виконаний
+              інтер'єр Kia Stonic не тільки радує око, але й дозволяє із комфортом
+              влаштуватися людям різної комплекції, забезпечуючи максимум контролю
+              над кросовером та задоволення від подорожей
+            </p>
+          </div>
+        </div>
+        <div class="car-slider__item item bg-2">
+          <div class="container">
+            <span class="slider__item-title">ІНТЕР'ЄР</span>
+            <h2 class="slider__item-slogan">Збільшений простір позаду</h2>
+            <p class="slider__item-text">Завдяки подовженій новій платформі
+              задні пасажири Kia Stonic авдчувають себе у автомобілі класом вище
+            </p>
+          </div>
+        </div>
       </div>
       <div class="interior__car-parts">
         <ul class="interior__car-parts__items">
@@ -219,8 +303,31 @@
     </div>
     <!-- KEY MOMENTS -->
     <div id="key-moments">
-      <div class="key-moments__car-slider">
-
+      <div class="key-moments__car-slider owl-carousel">
+        <div class="car-slider__item item bg-1">
+          <div class="container">
+            <span class="slider__item-title">КЛЮЧОВІ МОМЕНТИ</span>
+            <h2 class="slider__item-slogan">Більше простору означає більше практичності</h2>
+            <p class="slider__item-text">Компактний кросовер, такий як Kia Stonic,
+              створений для того, щоб перетворювати ваші бажання на реальність.
+              Завдяки просторому салону та можливості гнучко використовувати
+              простір для багажу, спонтанні пригоди стають частиною вашого
+              щоденного життя
+            </p>
+          </div>
+        </div>
+        <div class="car-slider__item item bg-2">
+          <div class="container">
+            <span class="slider__item-title">КЛЮЧОВІ МОМЕНТИ</span>
+            <h2 class="slider__item-slogan">Додайте індивідуальності своєму Stonic</h2>
+            <p class="slider__item-text">Хочете отримати свій унікальний Stonic?
+              Обирайте один з декількох варіантів двокольорового фарбування
+              кузова, додаткові пакети оформлення салону та оригінальні аксесуари
+              (можливість замовити автомобіль з комбінованим фарбуванням кузова
+              та салону уточнюйте у найближчого офіційного дилера)
+            </p>
+          </div>
+        </div>
       </div>
       <div class="key-moments__car-parts">
         <ul class="key-moments__car-parts__items">
@@ -334,7 +441,7 @@
     <!--CLIENT INFO-->
     <div id="client-info">
       <div class="client-info__car">
-        <img src="images/client_car.png" alt="Car">
+        <img class="client-info__car-img" src="images/client_car.png" alt="Car">
       </div>
       <div class="client-info__bg">
         <div class="container">
@@ -504,9 +611,70 @@
       </div>
     </div>
   </footer>
+
+  <!-- FIXED ITEMS -->
+  <div class="fixed-items">
+    <!-- PROGRESS MENU-->
+    <div class="progress-menu">
+      <ul class="progress-menu__list">
+        <li class="progress-menu__list-item">
+          <a href="#header">
+            <span class="item-text">Загальна інформація</span>
+            <span class="item-number">1</span>
+          </a>
+        </li>
+        <li class="progress-menu__list-item">
+          <a href="#exterior">
+            <span class="item-text">Екстер'єр</span>
+            <span class="item-number">2</span>
+          </a>
+        </li>
+        <li class="progress-menu__list-item">
+          <a href="#interior">
+            <span class="item-text">Інтер'єр</span>
+            <span class="item-number">3</span>
+          </a>
+        </li>
+        <li class="progress-menu__list-item">
+          <a href="#key-moments">
+            <span class="item-text">Ключові моменти</span>
+            <span class="item-number">4</span>
+          </a>
+        </li>
+        <li class="progress-menu__list-item">
+          <a href="#dynamic">
+            <span class="item-text">Динаміка</span>
+            <span class="item-number">5</span>
+          </a>
+        </li>
+        <li class="progress-menu__list-item">
+          <a href="#security">
+            <span class="item-text">Безпека</span>
+            <span class="item-number">6</span>
+          </a>
+        </li>
+        <li class="progress-menu__list-item">
+          <a href="#client-info">
+            <span class="item-text">Інформація для клієнта</span>
+            <span class="item-number">7</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- FIXED BUTTONS-->
+    <div class="fixed-items__btns">
+      <div class="fixed-btn share">
+        <img src="images/btn_share.png" alt="Share">
+      </div>
+      <div class="fixed-btn scrolltop">
+        <a href="#header">
+          <img src="images/btn_top.png" alt="Scroll">
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
-
-
-
+<script type="text/javascript" src="js/main.js"></script>
+<script src="owlcarousel/owl.carousel.js"></script>
 </body>
 </html>

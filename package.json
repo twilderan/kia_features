@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "browser-sync": "^2.26.3",
-    "fullpage.js": "^3.0.4",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "*",
     "gulp-beautify": "*",

@@ -8,6 +8,7 @@
         padding: 10px;
         display: flex;
         justify-content: space-evenly;
+        box-sizing: border-box;
         .header-top__purpose-list {
           display: flex;
           list-style: none;
@@ -16,7 +17,10 @@
             padding-right: 10px;
             margin-left: 5px;
             background: url("../images/bd_stick.gif") 100% no-repeat;
-            &:first-child { margin-left: 0; }
+            &:last-child {
+              background: none;
+              padding: 0;
+            }
             a {
               font-weight: bold;
               color: $header-top-list;
@@ -31,7 +35,7 @@
           font-weight: bold;
         }
         .header-top__search {
-          margin-left: 15px;
+          margin-left: 5px;
           border: 1px solid $greyColor;
           border-radius: 20px;
           width: 120px;
@@ -60,11 +64,12 @@
 
     /* HEADER MIDDLE */
     .header-main {
-      padding: 10px;
       .container {
+        padding: 10px 0;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        box-sizing: border-box;
         .header-main__logo {
           img {
             width: 75px;

@@ -1,7 +1,59 @@
 #key-moments{
   min-width: 960px;
   .key-moments__car-slider {
-
+    position: relative;
+    .owl-dots {
+      display: flex;
+      position: absolute;
+      bottom: 50px;
+      left: calc(50% - 88px);
+      .owl-dot {
+        display: block;
+        height: 80px;
+        width: 80px;
+        outline: none;
+        margin-right: 15px;
+        &:first-child {background: url("../images/key-moments_btn_1.png");}
+        &:nth-child(2) {background: url("../images/key-moments_btn_2.png");
+          margin: 0;
+        }
+        &.active {
+          &:first-child {background: url("../images/key-moments_btn_1_active.png");}
+          &:nth-child(2) {background: url("../images/key-moments_btn_2_active.png");}
+        }
+      }
+    }
+    .car-slider__item {
+      min-width: 960px;
+      height: 100vh;
+      color: #fff;
+      text-shadow: #000 0 0 5px;
+      &.bg-1 { background: url("../images/key-moments_slide_1.jpg") no-repeat center; }
+      &.bg-2 { background: url("../images/key-moments_slide_2.jpg") no-repeat center; }
+      .container {
+        padding-top: 40px;
+        font-weight: bold;
+        .slider__item-title {
+          display: block;
+          font-size: 22px;
+          line-height: 40px;
+          padding-left: 5px;
+          text-transform: uppercase;
+          background: url("../images/top_stick.gif") no-repeat 7px 0;
+        }
+        .slider__item-slogan {
+          font-size: 50px;
+          line-height: 53px;
+          padding-top: 15px;
+        }
+        .slider__item-text {
+          font-size: 16px;
+          line-height: 20px;
+          padding-top: 15px;
+          padding-left: 5px;
+        }
+      }
+    }
   }
 
   .key-moments__car-parts {

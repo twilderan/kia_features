@@ -3,6 +3,7 @@
     /* CAR MENU */
     .car-menu {
       background: $redColor;
+      min-width: 960px;
       .container {
         display: flex;
         justify-content: space-between;
@@ -25,7 +26,15 @@
               vertical-align: middle;
               text-transform: uppercase;
               margin-right: 25px;
-              height: 100%;
+              height: 50px;
+              &:nth-child(2) {
+                a {
+                  box-sizing: border-box;
+                  border-bottom: 4px solid #fff;
+                  color: #fff;
+                  font-weight: bold;
+                }
+              }
               a {
                 display: block;
                 font-size: 14px;
@@ -34,6 +43,7 @@
                 color: #dd8b95;
                 height: 100%;
                 &:hover { text-decoration: underline; }
+
               }
             }
           }
@@ -46,16 +56,88 @@
           align-items: center;
           border-left: 1px solid #920510;
           border-right: 1px solid #920510;
-          .more-dwn {
+          position: relative;
+          &.open {
+            background-color: #74000f;
+            .more-btn {
+              background-position: 0 -48px;
+            }
+            .more-list {
+              display: block;
+            }
+          }
+          .more-btn {
             width: 47px;
             height: 12px;
             background: url("../images/car_spr.png") 0 -34px;
-
+          }
+          .more-list {
+            display: none;
+            position: absolute;
+            top: 50px;
+            right: 0;
+            background-color: $redColor;
+            list-style: none;
+            width: 185px;
+            &__item {
+              border-top: 1px solid #920510;
+              &:first-child {
+                .item-spt { background-position:  0 0; }
+              }
+              &:nth-child(2) {
+                .item-spt { background-position:  -16px 0; }
+              }
+              &:nth-child(3) {
+                .item-spt { background-position:  -16px -16px; }
+              }
+              .item-spt {
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                vertical-align: middle;
+                background: url(../images/car_spr.png) no-repeat;
+              }
+              a {
+                display: block;
+                border-top: 1px solid #c22e41;
+                padding: 6px 13px;
+                color: #fff;
+                font-size: 12px;
+                text-transform: uppercase;
+                text-decoration: none;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
           }
         }
       }
     }
-
+    .car-slider {
+      .car-slider__item {
+        min-width: 960px;
+        height: 70vh;
+        color: #fff;
+        text-shadow: #000 0 0 5px;
+        &:nth-child(1) {background: url("../images/main-info_slide_1.jpg") no-repeat center;}
+        .container {
+          padding-top: 40px;
+          font-weight: bold;
+          .slider__item-slogan {
+            font-size: 50px;
+            line-height: 53px;
+            padding-top: 15px;
+          }
+          .slider__item-text {
+            font-size: 16px;
+            line-height: 20px;
+            padding-top: 15px;
+            padding-left: 5px;
+          }
+        }
+      }
+    }
     /* CAR INFO */
     .car-info {
       .container {

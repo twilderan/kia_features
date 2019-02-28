@@ -1,18 +1,18 @@
 #client-info {
-  padding-top: 80px;
+  padding-top: 100px;
   min-width: 960px;
   overflow: hidden;
   .client-info__car {
     max-width: 1000px;
     margin: 0 auto;
-    &:hover {
-      img { left: 0; }
-    }
-    img {
+    &-img {
       position: relative;
       left: 200%;
       width: 100%;
       transition: all .7s ease-in-out;
+      &.active {
+        left: 0;
+      }
     }
   }
 
