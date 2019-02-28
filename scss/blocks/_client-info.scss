@@ -3,37 +3,34 @@
   min-width: 960px;
   overflow: hidden;
   .client-info__car {
-
     max-width: 1000px;
     margin: 0 auto;
     &:hover {
-      img {
-        left: 0;
-      }
+      img { left: 0; }
     }
     img {
       position: relative;
-      left: 1960px;
+      left: 200%;
       width: 100%;
       transition: all .7s ease-in-out;
     }
   }
+
   .client-info__bg {
     background: $clientGrey;
-    height: 150px;
+    height: auto;
     padding-top: 100px;
+    padding-bottom: 50px;
     margin-top: -110px;
     .container {
       .client-info__list {
         list-style: none;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         .client-info__item {
+          width: 25%;
           a {
             color: #fff;
-            .client-info__item-img {
-
-            }
             .client-info__item-text {
               display: block;
               text-align: center;
@@ -41,10 +38,30 @@
               text-transform: uppercase;
               font-weight: bold;
             }
+            .item_1 {
+              height: 130px;
+              background: url("../images/user_spt.png") center 0 no-repeat;
+            }
+            .item_2 {
+              height: 130px;
+              background: url("../images/user_spt.png") center -200px no-repeat;
+            }
+            .item_3 {
+              height: 130px;
+              background: url("../images/user_spt.png") center -400px no-repeat;
+            }
           }
         }
       }
     }
-
+  }
+  .client-info__note {
+    padding: 15px;
+    .container {
+      .note-list {
+        font-size: 12px;
+        padding-left: 20px;
+      }
+    }
   }
 }
