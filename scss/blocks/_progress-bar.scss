@@ -8,6 +8,17 @@
       list-style: none;
       &-item {
         text-align: right;
+        &.point {
+          a {
+            .item-text{
+              width: 220px;
+              background: url("../images/bg_indicatortxt_on.png");
+            }
+            .item-number {
+              background: url("../images/bg_indicator_on.png") no-repeat;
+            }
+          }
+        }
         &:hover {
           a {
             .item-text {
@@ -39,7 +50,7 @@
             margin-right: 14px;
             line-height: 32px;
             background: url("../images/bg_indicatortxt_off.png");
-            transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out .15s;
             //&.point {
             //  width: 220px;
             //  background: url("../images/bg_indicatortxt_on.png");

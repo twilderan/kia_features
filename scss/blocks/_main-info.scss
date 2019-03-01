@@ -57,6 +57,7 @@
           border-left: 1px solid #920510;
           border-right: 1px solid #920510;
           position: relative;
+          cursor: pointer;
           &.open {
             background-color: #74000f;
             .more-btn {
@@ -169,6 +170,10 @@
                 color: $blackColor;
               }
             }
+
+          }
+          .darkgrey {
+            background: #efefef;
           }
         }
       }
